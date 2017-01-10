@@ -1,12 +1,188 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-  <head>
-    <title>Metalnx - iRODS datagrid and metadata management UI</title>
-  </head>
-  
-  <body>
-    <h2>Metalnx website</h2>
-    <a href="https://github.com/Metalnx/metalnx-web">Github repo</a>.
-  </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./images/favicon_mlx.png">
+    <title>Dell EMC iRODS Tools</title>
+    <!-- Bootstrap core CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./css/carousel.css" rel="stylesheet">
+    <link href="./css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR ================================================== -->
+    <div class="navbar-wrapper ">
+        <nav class="navbar navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> 
+                        <span class="sr-only">Toggle navigation</span> 
+                        <i class="fa fa-bars top-menu" aria-hidden="true"></i>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img class="main-logo" src="./images/logo_Dell_EMC_blue_gray.svg" alt="Dell EMC" height="35px">
+                        <span class="main-title">iRODS Tools</span>
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse pull-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#metalnx">Metalnx</a></li>
+                        <li><a href="#irodsplugins">Isilon iRODS Plugin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Carousel ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="second-slide" src="./images/carousel_bg.jpg" alt="Metalnx">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <img class="carousel-logo" src="./images/logo_mlx_white.svg" alt="Metalnx">
+                        <p>Simple, intuitive tool for Metadata Management</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="second-slide" src="./images/carousel_bg.jpg" alt="iRODS Plugins">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <div class="carousel-title"><span>Isilon iRODS Plugin</span></div>
+                        <p>The Isilon iRODS Plugin was designed to improve performance when accessing data from iRODS. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- /.carousel -->
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <img class="img-circle icon" src="./images/icon_mlx.svg" alt="Metalnx">
+                <h2>Metalnx</h2>
+                <p>Metalnx is a web application designed to work alongside the iRODS. It provides a graphical UI that can help simplify most administration, collection and metadata management tasks removing the need to memorize the long list of icommands.</p>
+                <p>
+                    <a class="btn btn-default" href="#metalnx" role="button">Learn More&raquo;</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <img class="img-circle icon" src="./images/icon_plugins.svg" alt="iRODS Plugins">
+                <h2>Isilon iRODS Plugin</h2>
+                <p><a href="https://www.emc.com/en-us/storage/isilon/index.htm">Dell EMC Isilon</a> scale-out storage systems can be used with IRODS to store and manage large amounts of data. The Isilon iRODS Plugin is designed to provide object access to the Isilon when accessing data from iRODS.
+                </p>
+                <p>
+                    <a class="btn btn-default" href="#irodsplugins" role="button">Learn more &raquo;</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4 col-md-4 col-sm-4"> <img class="img-circle icon" src="./images/icon_irods.svg" alt="iRODS">
+                <h2>iRODS</h2>
+                <p>iRODS is open source data management software used by research organizations and government agencies worldwide. iRODS is released as a production-level distribution aimed at deployment in mission critical environments.</p>
+                <p>
+                    <a class="btn btn-default" href="http://irods.org/" target="_blank" role="button">Visit Website&raquo;</a>
+                </p>
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+        <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider">
+        <section id="metalnx">
+            <div class="row featurette">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <h2 class="featurette-heading">Metalnx: <span class="text-muted">Metadata Management for iRODS.</span></h2>
+                    <p class="lead">Metalnx helps both the IT administrators charged with managing metadata and the end-users who need to find and access relevant data based upon metadata descriptions.</p>
+                    <blockquote> Making use of metadata via an easy to use UI provided by Metalnx working with iRODS can help:
+                        <ul>
+                            <li>Maximize storage assets</li>
+                            <li>Find what’s valuable, no matter where the data is located</li>
+                            <li>Automate movement and processing of data</li>
+                            <li>Securely share data with collaborators</li>
+                        </ul> - <a href="http://emergingtechblog.emc.com/metalnx-making-irods-easy/" target="_blank">Emerging Technologies Blog</a>
+                    </blockquote>
+                </div>
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center get-mlx">
+                        <img src="./images/icon_github.svg">
+                        <a href="https://github.com/Metalnx/metalnx-web" target="_blank">
+                            <span><i class="fa fa-download" aria-hidden="true"></i> Get Source</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 text-center get-mlx">
+                        <img src="./images/icon_bintray.svg"><a href="https://bintray.com/metalnx" target="_blank"><span><i class="fa fa-download" aria-hidden="true"></i> Get Binaries</span></a>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-center get-mlx">
+                        <img src="./images/icon_docker.png">
+                        <a href="https://hub.docker.com/r/metalnx/metalnx-web/" target="_blank"><span><i class="fa fa-download" aria-hidden="true"></i> Docker </span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="featurette-divider">
+        <section id="irodsplugins">
+            <div class="row featurette">
+                <div class="col-md-10 col-sm-10 col-xs-12">
+                    <h2 class="featurette-heading ">Isilon iRODS Plugin: <span class="text-muted ">Better performance in your iRODS grid.</span></h2>
+                    <p class="lead ">Isilon iRODS Plugin provides iRODS with the full potential of DELL EMC Isilon scale-out storage system. It offers better read performance, and load distribution among nodes of a clustered storage system.</p>
+
+                    <p class="lead ">Core features:</p>
+                    <ul class="lead ">
+                        <li>A storage resource driver for Isilon on iRODS 4.1.9 and later</li>
+                        <li>Object based access to an Isilon cluster: HDFS access which is JRE free</li>
+                        <li>Better load balancing and in some cases better performance compared to NFS access</li>
+                        <li>Support for using Isilon storage pools across multiple iRODS resource servers</li>
+                        <li>Some client-side performance optimizations like read ahead</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-2 get-plugins">
+                    <img src="./images/banner_isilon.svg" alt="Isilon - iRODS Plugin">
+                    <a href="https://github.com/Sk-iRODS-Extensions/EMC-Isilon-Resource-Plugin-for-iRODS" target="_blank"><span><i class="fa fa-github" aria-hidden="true"></i> Get Source</span></a>
+                </div>
+            </div>
+        </section>
+        <hr class="featurette-divider ">
+        <!-- /END THE FEATURETTES -->
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right "><a href="# ">Back to top</a></p>
+            <p>&copy; 2016 Dell EMC, Inc.</p>
+        </footer>
+    </div>
+    <!-- /.container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src="./js/bootstrap.min.js "></script>
+    <script src="https://use.fontawesome.com/248ced17a2.js"></script>
+</body>
 
 </html>

@@ -1,0 +1,240 @@
+body {
+    background-color: #fff;
+}
+
+nav.navbar {
+    width: 100%;
+    background-color: #000;
+}
+
+a.navbar-brand {
+    margin-top: -7px;
+}
+
+span.main-title {
+    color: #fff;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+i.top-menu {
+    color: #337ab7;
+    font-size: 25px;
+}
+
+img.main-logo {
+    display: inline;
+    margin-right: 10px;
+}
+
+.carousel-logo {
+    margin-bottom: 50px;
+    height: 130px;
+    width: auto;
+}
+
+div.carousel-title {
+    padding: 20px;
+}
+
+.carousel-title>span {
+    font-size: 85px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.get-mlx>img {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.get-plugins>img {
+    display: block;
+    margin-bottom: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width:900px) {
+    .carousel-logo {
+        height: 130px;
+        width: auto;
+    }
+    .carousel-title>span {
+        font-size: 80px;
+    }
+    .get-mlx>img {
+        height: 110px;
+        margin-top: 170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .get-plugins>img {
+        height: 170px;
+        margin-top: 335px;
+        margin-left: 0;
+    }
+    img.img-circle.icon {
+        height: 100px;
+        width: 100px;
+    }
+    img.main-logo {
+        height: 35px;
+    }
+    span.main-title {
+        font-size: 40px;
+    }
+    a.navbar-brand {
+        margin-top: -5px;
+    }
+    .get-mlx {
+        clear: none;
+    }
+}
+
+@media (min-width:768px)and (max-width:900px) {
+    .carousel-logo {
+        height: 80px;
+        width: auto;
+    }
+    .carousel-title>span {
+        font-size: 45px;
+    }
+    .get-mlx>img {
+        height: 110px;
+        margin-top: 170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .get-plugins>img {
+        height: 170px;
+        margin-top: 335px;
+        margin-left: 0;
+    }
+    img.img-circle.icon {
+        height: 90px;
+        width: 90px;
+    }
+    img.main-logo {
+        height: 25px;
+    }
+    span.main-title {
+        font-size: 30px;
+    }
+    a.navbar-brand {
+        margin-top: 0;
+    }
+    .get-mlx {
+        clear: none;
+    }
+}
+
+@media (min-width:414px) and (max-width: 768px) {
+    .carousel-logo {
+        height: 60px;
+        width: auto;
+    }
+    .carousel-title>span {
+        font-size: 45px;
+    }
+    .get-mlx>img {
+        height: 90px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .get-plugins>img {
+        height: 180px;
+        margin-left: 0;
+    }
+    img.img-circle.icon {
+        height: 80px;
+        width: 80px;
+    }
+    a.navbar-brand {
+        margin-top: 0;
+    }
+    span.main-title {
+        font-size: 30px;
+    }
+    .get-mlx {
+        clear: none;
+    }
+}
+
+@media (min-width:375px) and (max-width: 414px) {
+    .marketing h2 {
+        font-size: 25px;
+    }
+    h2.featurette-heading {
+        font-size: 25px;
+    }
+    blockquote {
+        font-size: 15px;
+    }
+    img.main-logo {
+        height: 20px;
+    }
+    .carousel-logo {
+        height: 45px;
+        width: auto;
+    }
+    .carousel-title>span {
+        font-size: 35px;
+    }
+    .get-mlx>img {
+        height: 80px;
+    }
+    .get-plugins>img {
+        height: 150px;
+        margin-left: 0;
+    }
+    img.img-circle.icon {
+        height: 80px;
+        width: 80px;
+        margin-top: 30px
+    }
+    a.navbar-brand {
+        margin-top: 0;
+    }
+    span.main-title {
+        font-size: 20px;
+    }
+    .get-mlx {
+        clear: none;
+    }
+}
+
+@media (max-width: 320px) {
+    .marketing h2 {
+        font-size: 25px;
+    }
+    h2.featurette-heading {
+        font-size: 25px;
+    }
+    blockquote {
+        font-size: 15px;
+    }
+    span.main-title {
+        display: none;
+    }
+    img.main-logo {
+        height: 30px;
+    }
+    .carousel-logo {
+        height: 40px;
+        width: auto;
+    }
+    .carousel-title>span {
+        font-size: 25px;
+    }
+    .get-mlx>img {
+        height: 80px;
+    }
+    .get-plugins>img {
+        height: 120px;
+    }
+    img.img-circle.icon {
+        height: 60px;
+        width: 60px;
+    }
+}
